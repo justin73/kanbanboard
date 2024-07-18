@@ -1,0 +1,8 @@
+export const TODO = 'todo'
+export const IN_PROGRESS = 'inProgress'
+export const DONE = 'done'
+export const TODO_LABEL = 'To Do'
+export const IN_PROGRESS_LABEL = 'In Progress'
+export const DONE_LABEL = 'Done'
+export const LEFT = 'left'
+export const RIGHT = 'right'

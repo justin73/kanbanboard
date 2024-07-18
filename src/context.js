@@ -3,6 +3,7 @@ import { TODO, IN_PROGRESS, DONE, DONE_LABEL, TODO_LABEL, IN_PROGRESS_LABEL} fro
 
 export const KanbanContext = createContext();
 
+// mimic data returned by the server
 const INITIAL_STATE = {
   [TODO]: {
     id: TODO,
@@ -40,8 +41,6 @@ export const KanbanProvider = ({children}) => {
   const [columns, setColumns] = useState(INITIAL_STATE);
 
   const moveCard = ({card, from, to}) => setColumns(prevColumns => {
-    console.log('fromColumn', from)
-    console.log('prevColumns[from]', prevColumns[from])
     return ({
     ...prevColumns,
     [from]: {

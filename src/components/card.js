@@ -1,6 +1,8 @@
 import { LEFT, RIGHT , TODO_LABEL, IN_PROGRESS_LABEL, DONE_LABEL,TODO, IN_PROGRESS, DONE} from "../const"
 import { useKanbanBoard } from "../context";
 
+// Abstracting the mapping logic from component to a constant, mimic a server response, that means, we can support configurable columns
+// when we do it this way, we are separating the business logic with the presentation layer (pure component) it makes it more clean and scalable
 const MOVE_MAPPINGS = {
   [LEFT]: {
     [IN_PROGRESS_LABEL]: { from: IN_PROGRESS, to: TODO },

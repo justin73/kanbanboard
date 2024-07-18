@@ -2,4 +2,4 @@
 
 ## Preview
 
-
+[preview](./public/preview.png)
